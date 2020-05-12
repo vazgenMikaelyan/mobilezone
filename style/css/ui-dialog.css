@@ -1,0 +1,520 @@
+.ui-dialog {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 0;
+    z-index: 1000;
+    background:  #F6F6F6;  
+    box-shadow: 0 0 35px #333;
+}
+
+.ui-widget-overlay {
+
+
+    position: fixed;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    background:#000000;
+    z-index:100;
+    opacity:0.3;
+    -moz-opacity: 0.3; 
+    -khtml-opacity: 0.3;
+    filter:Alpha(opacity:30);
+}
+.ui-forgot-passw .ui-dialog-titlebar{
+
+    cursor: move;
+    margin: 0px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 50px;   
+    font-weight:normal;
+    position: relative;
+    background: rgb(0,132,255);
+    border-left:2px solid #9D9D9D;
+    border-top: 2px solid #9D9D9D;
+    border-right: 2px solid #9D9D9D;
+}
+.ui-forgot-passw .ui-dialog-titlebar .ui-dialog-title{
+    width: 83%;
+    font-size: 22px;    
+    margin-left:15px;
+    text-align: left;
+    padding-left: 40px;   
+    display: inline-block;
+    font-family: "segoe_uib";  
+    background:  url('../images/ui-dialog-header.png') no-repeat left 7px;
+}
+
+.ui-forgot-passw .ui-dialog-titlebar button{
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 15px;
+    top:15px;
+    cursor: pointer;
+    background: url('../images/close.png') no-repeat left top;        
+}
+.ui-forgot-passw .ui-dialog-titlebar button span{
+    display: none;
+}
+#dialog{
+    display: none;
+    z-index: 1000;
+    background:  #F6F6F6;    
+}
+#dialog div.description{
+    width: 395px;
+    margin: 17px auto 20px auto;
+    font-family: "segoe_ui";
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#dialog form{
+    width: 395px;
+    margin: 0px auto;
+}
+
+#dialog form div.error{
+    display: none;
+    color:#EE3843;
+    font-family: "segoe_ui";
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#dialog form input{
+    width: 363px;
+    padding: 12px 15px;
+    outline: none;
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+    border: 1px solid #B0AFAF;
+}
+#dialog form button#send{
+    border: none;
+    outline: none;
+    width: 395px;
+    height: 61px;
+    cursor: pointer;
+    margin: 25px 0px 30px 0px;
+    background: url('../images/send-passw.png') no-repeat right top;
+}
+.ui-datepicker-startData{
+    border: 1px solid #99D6F9;
+}
+.ui-datepicker-startData .ui-datepicker-header{
+    background: #00A2FF;
+    position: relative;
+    height: 30px;
+}
+.ui-datepicker-endData{
+    border:  1px solid #C9C9C9;
+}
+.ui-datepicker-endData .ui-datepicker-header{
+    background: #A9A9A9;
+    position: relative;
+    height: 30px;
+}
+
+.ui-datepicker-startData,
+.ui-datepicker-endData{
+    width: 155px;
+    background: #FFFFFF;
+}
+.ui-datepicker-endData   .ui-datepicker-header .ui-datepicker-prev,
+.ui-datepicker-startData .ui-datepicker-header .ui-datepicker-prev{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 11px;
+    width: 11px;
+    z-index: 2;
+    cursor: pointer;
+    background: url('../images/ui-datepicker-pointer.png') no-repeat left top;
+}
+.ui-datepicker-endData   .ui-datepicker-header .ui-datepicker-next,
+.ui-datepicker-startData .ui-datepicker-header .ui-datepicker-next{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    height: 11px;
+    width: 11px;
+    z-index: 2;
+    cursor: pointer;
+    background: url('../images/ui-datepicker-pointer.png') no-repeat right top;
+}
+.ui-datepicker-endData .ui-datepicker-header .ui-datepicker-title,
+.ui-datepicker-startData .ui-datepicker-header .ui-datepicker-title{
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    font-weight: bold;
+    font-family: "segoe_ui";
+
+}
+.ui-datepicker-endData   .ui-datepicker-header .ui-datepicker-next span,
+.ui-datepicker-endData   .ui-datepicker-header .ui-datepicker-prev span,
+.ui-datepicker-startData .ui-datepicker-header .ui-datepicker-next span,
+.ui-datepicker-startData .ui-datepicker-header .ui-datepicker-prev span{
+    display: none;
+}
+
+.ui-datepicker-calendar{
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: "segoe_ui";
+}
+.ui-datepicker-calendar thead tr th{
+    color:#00a2ff;
+    font-size: 15px;
+
+}
+.ui-datepicker-calendar tbody tr td{
+    text-align: center;
+}
+.ui-datepicker-calendar tbody tr td.ui-datepicker-today{
+    background: #00a2ff;
+}
+
+.ui-datepicker-calendar tbody tr td.ui-datepicker-today a.ui-state-highlight{
+    color:#ffffff;
+}
+
+.ui-datepicker-calendar tbody tr td.ui-datepicker-current-day a.ui-state-default{
+    color:#00a2ff; 
+}
+.ui-datepicker-calendar tbody tr td a.ui-state-default{
+
+    color:#898989;
+    font-size: 14px;
+    text-decoration: none;
+}
+#ui-login-dialog{
+    display: none;
+}
+#ui-login-dialog #login-with-f-block{
+    width: 396px;
+    padding: 45px 0px;
+    margin: auto;
+    background: url('../images/ui-login-with-f-or.png') no-repeat left bottom;
+}
+
+#ui-login-dialog #login-with-f-block a{
+    width: 396px;
+    height: 61px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    display: block;
+    background: url('../images/ui-login-with-f.png') no-repeat left top;        
+}
+#ui-login-dialog form{
+    width: 396px;
+    border-top: 1px solid transparent;    
+    margin: 0px auto;    
+}
+#ui-login-dialog form input{
+    width: 365px;     
+    padding: 0px;
+    border: none;
+    outline: none;
+    display: block;
+    color:#898989;
+    font-size: 17px;
+    padding: 10px 15px 10px 14px;
+    font-family: 'segoe_condensedregular';
+    margin: 16px 0px 0px 0px;    
+    border: 1px solid #B1B0B0;
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+}
+#ui-login-dialog form input:focus{
+    outline: none;
+}
+
+#ui-login-dialog form a{
+    float:right;
+    margin:15px 0px;
+    color: #0084ff;
+    font-size: 17px;
+    font-family: 'segoe_condensedregular';
+}
+#ui-login-dialog form button{
+    width: 396px;
+    height: 61px;
+    margin: 0px 0px 45px 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    background: url('../images/logme.gif') no-repeat left top; 
+}
+#ui-about-dialog{
+    display: none;
+    overflow: hidden;
+}
+
+#ui-about-dialog >div{
+    width:700px;
+    height: 590px;
+    overflow: hidden;
+    margin:30px;
+    padding-right: 35px;
+    color: #555555;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    position: relative;
+    font-family: 'segoe_condensedregular';
+
+}
+.ui-tooltip, .arrow:after {
+    background: #ffffff;
+    border: 2px solid #9e9e9e;
+}
+.ui-tooltip {
+    padding: 10px 20px;
+    color: #000000;
+    border-radius: 4px;
+    font-family: "segoe_ui";
+    font-size: 17px;
+    position: absolute;
+    max-width: 500px;
+    box-shadow: 0 0 7px black;
+}
+.arrow {
+    width: 70px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -20px;
+}
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+.arrow.left {
+    left: 20%;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+}
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+
+.ui-redme .ui-dialog-titlebar .ui-dialog-title{
+    padding-left: 10px !important;
+    background: none !important;
+}
+.ui-dialog-detalis{
+    width: 575px;
+    display: none;
+    background: #ffffff;
+}
+.ui-dialog-detalis form{
+    width: 518px;
+    margin: 0px auto;
+}
+.ui-dialog-detalis form .select-country{
+   padding-top: 25px;
+}
+.ui-dialog-detalis form .select-country .from-to{
+    overflow: hidden;
+    margin-bottom: 15px;
+    
+}
+.ui-dialog-detalis form .select-country .from-to div{
+    float: left;
+    width: 254px;
+    color:#555555;
+    font-size:18px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'segoe_ui';
+    text-transform: capitalize;
+}
+.ui-dialog-detalis form .select-country .select-box{
+    
+}
+
+.ui-dialog-detalis form .select-country .select-box .call-from,
+.ui-dialog-detalis form .select-country .select-box .dropdown{
+    
+    width: 254px;
+    position: relative;    
+}
+.ui-dialog-detalis form .select-country .select-box .call-from,
+.ui-dialog-detalis form .select-country .select-box .dropdown .selected{
+        display: block;
+        font-size: 16px;    
+    color: #898989;
+    font-family: "segoe ui";
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+    border: 1px solid #B0AFAF;
+    
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown{
+    float: right;
+}
+.ui-dialog-detalis form .select-country .select-box .call-from{
+    width: 222px;
+    padding: 9px 15px;
+    outline: none;
+    float:left;
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+    border: 1px solid #B0AFAF;
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown .old {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown .selected {
+display: block;
+width: 226px;
+line-height: 1;
+padding: 10px 15px 12px 11px;
+
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown .carat {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 52px;
+    height: 31px;
+    display: block;
+    background: url('../images/selectdata.png') no-repeat center 15px;
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown  > div {
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+    position: absolute;
+    margin-top: -3px;
+    width: 253px;
+    overflow: hidden;
+    border-right: 1px solid #B0B0B0;
+    background: #ffffff url('../images/selectbox1.jpg') repeat-y left top;
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown > div ul {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    background: url('../images/selectbox_bottom.jpg') repeat-x left bottom;
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown > div ul li {
+    padding: 2px 12px;
+    font-size: 18px;
+    color: #898989;
+}
+.ui-dialog-detalis form .select-country .select-box .dropdown > div ul li:hover {
+    color: #ffffff;
+    background: #00A2FF;
+}
+.ui-dialog-detalis form .details{
+    margin-top:30px;
+}
+.ui-dialog-detalis form .details .rate-minute{
+  
+    overflow: hidden;
+   
+        
+}
+.ui-dialog-detalis form .details .rate-minute div{
+
+    color:#0084ff;
+    font-size: 18px;    
+    font-family: "segoe ui";
+    text-align: center;
+  
+}
+.ui-dialog-detalis form .details .rate-minute .min-desc{
+    float:left;
+    margin-left: 35px;
+    
+}
+.ui-dialog-detalis form .details .rate-minute .min-desc:first-letter{
+
+    text-transform: uppercase;
+}
+.ui-dialog-detalis form .details .rate-minute .min-nis{
+    float: right;
+    margin-right:40px; 
+    text-transform: uppercase;
+}
+.ui-dialog-detalis form .details .nis_value{
+    width: 400px;
+    margin: 0px auto;
+    display: table;
+}
+.ui-dialog-detalis form .details .nis_value .nis{
+    display: table-row;
+    
+}
+.ui-dialog-detalis form .details .nis_value .nis div{
+    
+    float: left;
+    width: 111px;
+    color:#555555;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px 0px;
+    display: table-cell;
+    font-family: "segoe ui";
+    
+}
+.ui-dialog-detalis form .details .nis_value .nis div img{
+    width: 111px;
+    position: relative;
+    top: -4px;
+}
+.ui-dialog-detalis form .details .nis_value .nis div:first-child{
+    margin-right: 14px;
+    text-transform: uppercase;
+}
+.ui-dialog-detalis form .details .nis_value .nis div:last-child{
+    margin-left: 24px;
+    text-transform: capitalize;
+}

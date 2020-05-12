@@ -1,0 +1,42 @@
+#setDataform #setData_block .sim_activate .setData > div.tba{
+  background: url('../images/inputbg.png') no-repeat left top;
+}
+#setDataform #setData_block .sim_activate .setData > div.startdata input,
+#setDataform #setData_block .sim_activate .setData > div.endData input{
+
+  
+  padding: 9px 0px 9px 15px;
+ background: url('../images/selectdata1.png') no-repeat left bottom;
+}
+#ui-login-dialog form input{
+    background: url('../images/ui-login-input.png') no-repeat left top; 
+}
+.ui-forgot-passw .ui-dialog-titlebar .ui-dialog-title{
+    font-family: 'segoe_condensedbold';
+    font-weight: bold;
+   
+}
+#contact >form input{
+    
+    background: url('../images/input_contact.png') no-repeat left top;
+}
+
+#contact >form textarea{
+    
+    background: url('../images/contacttextarea.png') no-repeat left top;
+}
+#order form > div.userinfo div.count{
+    border-left: none;
+    border-top: none;
+    background: url('../images/order.png') no-repeat left top; 
+}
+#order form > div.userinfo div.addr,
+#registration_block  form .captcha_block .captcha  input,
+#registration_block form .register_block .row .column .dropdown .selected,
+#registration_block  form .register_block  > .row .column input{
+       background: url('../images/input_contact.png') no-repeat left top; 
+}
+
+#dialog form input{
+      background: url('../images/input_contact.png') no-repeat left top;
+}

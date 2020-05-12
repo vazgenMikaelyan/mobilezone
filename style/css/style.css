@@ -1,0 +1,1759 @@
+body{
+    margin: 0px;
+    padding: 0px;   
+    background: #E9E9E9;
+}
+
+
+header,footer,
+section,article,nav{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 1370px;
+    margin: 0px auto;
+    background: #ffffff;
+}
+
+#container > header{
+    height: 130px;
+    position: relative;
+    background: #505051 url('../images/header.png') repeat-x  left bottom;
+}
+
+#container > header #wrap_login{
+    float: right;
+    margin-right: 155px;
+}
+#container > header #wrap_login ul{
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    list-style: none;
+}
+#container > header #wrap_login ul li{
+    float: left;
+    height: 32px;
+    position: relative;
+    top: 8px;
+    margin-right: 10px; 
+}
+
+#container > header #wrap_login ul li > a{
+    outline: none;    
+    display: block;
+    color: #FFFFFF;
+    font-size: 13px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-family: 'segoe ui';
+    text-transform: capitalize;
+    padding: 8px 12px 4px 10px;
+    background: url('../images/pointer.png') no-repeat right 15px;
+}
+
+#container > header #wrap_login ul li > a span{
+    border-bottom: 1px #FFFFFF solid;
+}
+
+#container > header #wrap_login ul li > a:hover span{ 
+    border-bottom: none;
+}
+
+#container > header #wrap_login ul li.login > a.clicked{
+    background: #00A2FF;
+}
+#container > header #wrap_login ul li div.point{
+    display: none;
+    height: 10px;  
+    z-index: 100;
+    position: relative;
+    margin-right: -9px;
+    background:  url("../images/loginwithh1.png") no-repeat right bottom;
+}
+#container > header #wrap_login ul li div.login_popup{
+    display: none;
+    height: 213px;
+    width: 287px;
+    position: absolute;
+    left: -7px;
+    z-index: 100;
+    background:  url("../images/loginbody.png") no-repeat left top;
+}
+
+#container > header #wrap_login ul li div.login_popup form{    
+    width: 213px;
+    margin: 25px auto 0px auto;
+}
+#container > header #wrap_login ul li div.login_popup form div.error{
+    height: 20px;
+    color: #EE3843;
+    margin-bottom: 2px;
+    display: block;
+    text-align: center;
+
+}
+#container > header #wrap_login ul li div.login_popup form input[type="text"],
+#container > header #wrap_login ul li div.login_popup form input[type="password"]{
+    color: #898989;
+    height: 33px;
+    width: 186px;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    line-height: 33px;
+    padding-left: 13px;
+    padding-right: 12px; 
+    font-family: "segoe ui";
+    margin: 0px 0px 12px 0px;
+    border: 1px #9b9c9c solid;   
+}
+#container > header #wrap_login ul li div.login_popup form button{
+    width: 71px;
+    height: 33px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+    background:  url("../images/go.png") no-repeat left top;
+}
+
+#container > header #wrap_login ul li div.login_popup form a{
+    float: right;
+    color:#00A2FF;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "segoe ui";
+}
+#container > header #wrap_login ul li:hover div.point,
+#container > header #wrap_login ul li:hover div.login_popup{
+    _display: block;
+}
+
+#container > header #wrap_login ul li a.facebook{
+    padding-right: 22px;
+    background:  url("../images/facebook_white.png") no-repeat right 6px !important;
+}
+
+#container > header > nav{
+    clear: both;
+    height: 90px;
+    width: 1300px;
+    margin: 0px auto;
+}
+#container > header > nav > h1{
+    width:  209px;
+    float:  left;    
+    margin: 0px 0px 0px 212px;    
+}
+#container > header > nav > h1 a{
+    height: 0px;
+    display: block;
+    overflow: hidden; 
+    padding-top: 66px;
+    background:  url("../images/logo.png") no-repeat left top !important;    
+}
+
+#container > header nav > ul{    
+    margin: 0px;
+    height: 90px;
+    width: 858px;
+    padding: 0px;
+    float: right;
+    list-style: none;
+}
+#container > header nav >ul >li{
+    float: left;
+    height: 90px;
+    margin: 0px 1px;
+    position: relative;
+}
+
+#container > header nav > ul >li> a{
+    outline: none;
+    height: 85px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 0px 11px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'segoe_condensedbold';
+    border-top: 5px solid transparent;    
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+#container > header nav > ul >li >a span{
+    position: relative;
+    top: 19px;
+}
+#container > header nav > ul > li:hover ,
+#container > header nav > ul > li.active {
+    background: #F6F6F6;
+}
+
+#container > header nav > ul > li:hover > a,
+#container > header nav > ul > li.active> a {
+    height: 85px;
+    color: #00A2FF;
+    background: #F6F6F6;
+    border-top: 5px solid #00A2FF;    
+    border-left: 5px solid #00A2FF;
+    border-right: 5px solid #00A2FF;
+
+}
+#container > header nav > ul > li.card> a{
+    padding-right: 16px; 
+    background: url("../images/carticon.png") no-repeat 55px 28px;
+}
+
+#container > header nav > ul > li:hover ul{
+    display: block;
+}
+#container > header nav > ul > li ul{
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    color: #000000;
+    list-style: none;
+    background: #F6F6F6;
+    border-left: 5px solid #00A2FF;
+    border-bottom: 5px solid #00A2FF;
+    border-right: 5px solid #00A2FF;    
+}
+
+#container > header nav > ul > li ul > li a{
+    color: #000;
+    display: block;
+    padding: 11px 0px;
+    font-size: 22.73px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "segoe_condensedbold";
+}
+#container > header nav > ul > li ul > li.active a,
+#container > header nav > ul > li ul > li a:hover{
+    color: #ffffff;
+    background:#000000;
+}
+
+#container #banner{
+    margin: 0px;
+    overflow: hidden;
+    background: #F6F6F6;
+}
+
+#container #banner nav{
+    float: left;
+    width: 200px;
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+#container #banner nav h1{
+    margin: 0px;
+    padding: 0px;
+    color: #898989;
+    font-size: 24px;
+    padding-bottom: 15px;
+    font-family: "segoe_uib";
+    text-transform: capitalize;
+}
+#container #banner nav ul{    
+    padding: 0px;
+    list-style: none;
+    margin: 11px 0px 0px 0px;
+}
+#container #banner nav ul li:first-letter{
+    text-transform:capitalize;
+}
+#container #banner nav ul li a{
+
+    color: #898989;
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 15px;
+    font-family: 'segoe ui';
+    background: url('../images/Gpointer.png') no-repeat right 70%;
+}
+#container #banner nav ul li a:hover{
+    color: #00A4FF;
+    padding-right: 16px;
+    background: url('../images/active.png') no-repeat right 70% !important;
+}
+#container #banner #headerimg{
+    float: left;
+    height: 390px;
+    width: 1135px;
+    overflow: hidden;
+}
+
+#container #banner #headerimg img{
+    height: 390px;
+    max-width: 1135px;
+    
+}
+#container section {
+    position: relative;
+    top: 0px;
+}
+
+#container section header.home,
+#container section header.sitecontengt{
+
+    background: #00A2FF;    
+    box-shadow: 0 -16px 24px -8px #F6F6F6;
+    -moz-box-shadow: 0 -16px 24px -8px #F6F6F6;
+    -webkit-box-shadow: 0 -16px 24px -8px #F6F6F6;
+}
+#container section header.home{
+        height: 100px;
+}
+#container section header.sitecontengt{
+    height: 80px;
+}
+#container section header.home h1,
+#container section header.sitecontengt h1{     
+     
+    color: #fff;
+    padding: 0px;
+    font-size: 37px;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 0px 0px 0px 260px;
+    font-weight: normal;
+    font-family: 'segoe_condensedbold';
+}
+#container section header.home h1{
+    top:25px;
+}
+#container section header.sitecontengt h1 {
+ top:18px;        
+}
+#container section header h1:first-letter{
+    text-transform:capitalize;
+}
+#content{
+    width: 1050px;
+    margin: 0px auto;
+}
+
+#content .index{
+
+    float: left;
+    width: 620px;
+    margin-left: 105px;
+    padding-bottom: 20px;
+}
+#content .index > ul{    
+    padding: 0px;    
+    list-style: none;
+    margin: 53px 0px 0px 0px;
+}
+
+#content .index > ul li{
+    font-size: 18.5px;
+    padding-left: 30px;
+    overflow: hidden;
+    line-height: 33px;    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "segoe ui";
+    background: url('../images/ullist.png') no-repeat left 8px; 
+}
+#content .index .more{
+
+    font-size: 14px;
+    font-family: "segoe ui";    
+    margin: 7px 0px 0px 34px;
+}
+
+#content .index .more a {
+    color: #00A4FF;
+    padding-right: 15px;
+    text-transform: capitalize;
+    background: url('../images/active.png') no-repeat right 70% !important;
+}
+
+#content .manag{
+    float: right;
+    height: 500px;
+    width: 354px;
+    position: absolute;
+    top: -4px;
+    right: 127px;
+    z-index: 10;
+    background: url('../images/simicon.png') no-repeat left top;
+}
+
+#content .manag ul{
+
+    position: relative;
+    top: 250px;
+    margin:0px;
+    padding: 0px;    
+    list-style: none;
+
+}
+#content .manag ul li{
+    width: 256px;
+    height: 58px;
+    margin:auto;
+}
+#content .manag ul li a.purch{
+    width: 256px;
+    height: 58px;
+    display: block;
+    background: url('../images/button.png') no-repeat left top;    
+}
+#content .manag ul li a.manage{
+    width: 256px;
+    height: 58px;
+    display: block;
+    margin-top: 10px;
+    background: url('../images/button.png') no-repeat left -67px;
+
+}
+
+#container footer{
+    background: #DCDCDC;
+    padding-bottom: 30px;
+}
+
+#container footer #bottom_menu{
+    padding:30px 0px 0px 0px; 
+    overflow: hidden;    
+}
+
+#container footer #bottom_menu ul{
+    width: 860px;
+    margin: 0px 170px 0px 0px;
+    padding: 0px;
+    float: right;
+    overflow: hidden;
+    list-style: none;      
+}
+#container footer #bottom_menu ul li{
+    float: left;
+    display: initial;
+    background: url('../images/footerli.png') no-repeat left 3px;
+}
+#container footer #bottom_menu ul li:first-child{
+    background: none;
+}
+#container footer #bottom_menu ul li a{
+
+    color:#6a6a6a;
+    font-size: 16px;
+    padding: 0px 11px;
+    font-family: "segoe ui";
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#container footer #plink{
+    width: 168px;
+    margin: auto;
+}
+#container footer #plink ul{
+    padding: 0px;
+    height: 26px;
+    list-style: none;
+    margin: 20px 0px 0px 0px;    
+}
+#container footer #plink ul li{
+    float: left;
+    height: 26px;
+    width: 25px;
+    margin-left: 17px;
+}
+#container footer  #plink ul li a {
+    height: 26px;
+    width: 25px;
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+#container footer #plink ul li.f {
+    background: url('../images/plicon.png') no-repeat left top;
+}
+#container footer #plink ul li.t {
+    background: url('../images/plicon.png') no-repeat -42px top;
+}
+#container footer #plink ul li.y {
+    background: url('../images/plicon.png') no-repeat -84px top;
+}
+#container footer #plink ul li.g {
+    background: url('../images/plicon.png') no-repeat -126px top;
+}
+/* forgraund  div*/
+
+#forg {
+    display: none;
+    position: fixed;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    background:#000000;
+    z-index:100;
+    opacity:0.3;
+    -moz-opacity: 0.3; 
+    -khtml-opacity: 0.3;
+    filter:Alpha(opacity:30);
+}
+
+
+
+#purches_block{
+    width: 993px;
+    margin: 0px auto;
+}
+#purches_block .header{ 
+    display: table;
+    padding: 30px 0px 15px 0px;
+    background: url('../images/header_line1.png') no-repeat left bottom;
+}
+
+
+
+#purches_block .header > div{
+    width: 331px;
+    font-size: 25px;
+    text-align: center;
+    display: table-cell;
+    text-transform: capitalize;
+    font-family: 'segoe_condensedbold';
+}
+#purches_block .sim_type{
+    height: 64px;
+    margin-top: 30px;
+}
+#purches_block .sim_type > div{
+    float: left;
+    width: 331px;
+
+}
+#purches_block .sim_type .select_block .dropdown{
+    width: 120px;
+    margin: 0px auto;
+    position: relative;
+}
+#purches_block .sim_type .select_block .dropdown .old {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+#purches_block .sim_type .select_block .dropdown .selected{
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    color: #898989;
+    padding: 12px 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url('../images/selectbox11.jpg') no-repeat left top;
+}
+#purches_block .sim_type .select_block .dropdown .carat{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index: 10;
+    width: 52px;
+    height: 42px;
+    display: block;
+    background:  url('../images/carat1.jpg') no-repeat left top;
+}
+#purches_block .sim_type .select_block .dropdown > div{
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+    position: absolute;
+    margin-top: -3px;
+    width: 119px;
+    overflow: hidden;
+    border-right: 1px solid #B0B0B0;
+    background: #ffffff url('../images/selectbox1.jpg') repeat-y left top;
+}
+#purches_block .sim_type .select_block .dropdown > div ul{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    background:  url('../images/selectbox_bottom.jpg') repeat-x left bottom;
+}
+#purches_block .sim_type .select_block .dropdown > div ul li{
+    padding: 2px 12px;
+    font-size: 18px;
+    color: #898989;
+}
+#purches_block .sim_type .select_block .dropdown > div ul li:hover{
+    color: #ffffff;
+    background: #00A2FF;
+}
+
+#purches_block .sim_type .sim_description .regsim{
+    width: 107px;
+    height: 64px;
+    float: left; 
+    position: relative;
+    left: 100px;
+    background: url('../images/regsim.png') no-repeat left top;
+}
+#purches_block .sim_type .sim_description .microsim{
+    width: 107px;
+    height: 64px;
+    float: left; 
+    position: relative;
+    left: 100px;
+    background: url('../images/micro.png') no-repeat left top;
+}
+#purches_block .sim_type .sim_description .nanosim{
+    width: 107px;
+    height: 64px;
+    float: left; 
+    position: relative;
+    left: 100px;
+    background: url('../images/nano.png') no-repeat left top;
+}
+#purches_block .sim_type .sim_total{
+    height: 64px;
+    text-align: center;
+}
+#purches_block .sim_type .sim_description span{
+
+
+    position: relative;
+    top: 22px;
+    left: 125px;
+    color:#898989;
+    font-size: 19px;
+    font-weight: bold;    
+    text-transform: capitalize;
+    font-family: 'segoe_condensedregular';
+
+}
+#purches_block .sim_type .sim_total span{
+    top: 20px;
+    display: block;
+    color:#898989;
+    font-size: 20px;
+    font-weight: bold;       
+    position: relative;  
+    font-family: 'segoe ui';
+}
+#purches_block #submit_block{
+
+    width: 134px;
+    height: 48px;
+    float: right;  
+    margin-right: 117px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+#purches_block #submit_block button{
+    width: 134px;
+    height: 48px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: url('../images/next_purch.png') no-repeat left top;
+}
+.clear{
+    clear: both;
+    height: 0px;
+    display: block;
+}
+
+
+#setDataform{
+    width: 1050px;
+    margin: 0px;
+}
+#setDataform #setData_block .header{
+    overflow: hidden;
+    padding: 30px 0px 15px 0px;
+    background: url('../images/header_line2.png') no-repeat left bottom;
+
+}
+#setDataform #setData_block .header >div{
+    float: left;
+    font-size: 24px;
+    text-align: center; 
+    font-family: 'segoe_condensedbold';
+    text-transform: capitalize;
+}
+#setDataform #setData_block .header >div.type{
+    width: 150px;
+    text-align: left;  
+}
+#setDataform #setData_block .header >div.number,
+#setDataform #setData_block .header >div.status{
+    width: 150px;
+}
+
+#setDataform #setData_block .header >div.start,
+#setDataform #setData_block .header >div.end{
+    width: 170px;
+}
+#setDataform #setData_block .header >div.options,
+#setDataform #setData_block .header >div.total{
+    width: 130px;
+}
+#setDataform #setData_block .header >div span.startdata{
+    color: #00a2ff;
+}
+#setDataform #setData_block .header >div span.endData{
+    color: #f26522;
+}
+#setDataform #setData_block .sim_activate .setData{
+    overflow: hidden;    
+    padding: 32px 0px;   
+    background: url('../images/header_line1.png') no-repeat center bottom;
+}
+
+
+#setDataform #setData_block .sim_activate .setData > div{
+
+    float: left;
+    height: 42px;
+    color: #898989;    
+    font-size: 24px;  
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'segoe_condensedregular';
+}
+#setDataform #setData_block .sim_activate .setData > div.type{
+    height: 42px;
+    width: 150px;
+    text-align: left;
+}
+#setDataform #setData_block .sim_activate .setData > div.type span{
+    position: relative;
+    top: 8px;
+
+
+}
+#setDataform #setData_block .sim_activate .setData > div.tba{
+    height: 40px;
+    width: 168px;
+    text-align: left;
+    border: 1px solid #B1B0B0;
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+
+
+}
+#setDataform #setData_block .sim_activate .setData > div.tba span{
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+
+#setDataform #setData_block .sim_activate .setData > div.sim_state{
+    width: 130px;
+}
+
+#setDataform #setData_block .sim_activate .setData > div.sim_state >span.pending{
+    top: 3px;
+    width: 104px;
+    height: 34px;
+    display: block;
+    margin:  0px auto;
+    position: relative;
+    background: url('../images/simstate1.png') no-repeat left top;
+}
+
+#setDataform #setData_block .sim_activate .setData > div >span.noactivate{
+    top: 3px;
+    width: 104px;
+    height: 34px;
+    display: block;
+    margin:  0px auto;
+    position: relative;
+    background: url('../images/simstate1.png') no-repeat left bottom;
+}
+
+#setDataform #setData_block .sim_activate .setData > div.startdata,
+#setDataform #setData_block .sim_activate .setData > div.endData{
+    width: 170px;
+    position: relative;
+}
+#setDataform #setData_block .sim_activate .setData > div.startdata input,
+#setDataform #setData_block .sim_activate .setData > div.endData input{
+
+    width: 138px;
+    outline: none;    
+    color:#898989;
+    margin: 0px auto;
+    font-size: 18.19px;
+    font-family: 'segoe_uib';
+    padding: 7px 0px 7px 15px;
+    border: 1px solid #B1B0B0;
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+    background: url('../images/selectdata.png') no-repeat 124px 16px; 
+
+}
+
+#setDataform #setData_block .sim_activate .setData > div.startdata input:focus,
+#setDataform #setData_block .sim_activate .setData > div.endData input:focus{
+    outline: none; 
+}
+
+#setDataform #setData_block .sim_activate .setData > div.options,
+#setDataform #setData_block .sim_activate .setData > div.total{
+    width: 127px;
+}
+
+#setDataform #setData_block .sim_activate .setData > div.total span{
+    position: relative;
+    top: 8px;
+
+}
+#setDataform #setData_block .sim_activate .setData > div.options span{
+    margin-left: 5px;
+}
+#setDataform #setData_block .sim_activate .setData > div.options span.B_berry{
+    width: 30px;
+    height: 27px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    background: url('../images/option_icons.png') no-repeat left top;
+
+}
+
+#setDataform #setData_block .sim_activate .setData > div.options span.I_calling{
+    width: 29px;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    background: url('../images/option_icons.png') no-repeat left -55px;
+
+}
+#setDataform #setData_block .sim_activate .setData > div.options span.K_m_number{
+    width: 29px;
+    height: 25px;
+    position: relative;
+    display: inline-block;
+    background: url('../images/option_icons.png') no-repeat left -110px;
+}
+#setDataform #setData_block .sim_activate .packages_options{
+    margin: 24px 0px 0px 0px;
+    padding: 0px;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    list-style: none;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li{
+
+    float: left;
+    height: 27px;
+    color:#000000;
+    font-size: 19px;
+    margin-right: 41px;
+    font-family: 'segoe ui';
+}
+
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li:first-letter{
+    text-transform: capitalize;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li span.package_days{
+    color:#000000;
+    border: none;
+    margin: 0px 10px;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li span{
+    color:#0084ff;
+    font-size: 19px;   
+    text-transform: capitalize;
+    border-bottom:  1px solid #0084ff;
+}
+
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li.open_packages{
+
+    cursor: pointer;
+    padding-right: 20px;
+    background: url('../images/open_packages_default.png') no-repeat right 11px;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li.open_packages:hover{
+    padding-right: 20px;
+    color: #898989! important;
+    background: url('../images/open_packages_hover.png') no-repeat right 11px;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li.open_packages:hover span{
+    color: #898989;
+    border-bottom:  1px solid #898989;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li.close_packages{
+
+    cursor: pointer;
+    display: none;
+    padding-right: 22px;
+    background: url('../images/close_packages_default.png') no-repeat right 8px;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li.close_packages:hover{
+
+    cursor: pointer;
+    padding-right: 22px;
+    background: url('../images/close_packages_hover.png') no-repeat right 8px;
+}
+#setDataform #setData_block .sim_activate .packages_options ul.basic_options li.close_packages:hover span{
+    color: #898989;
+    border-bottom:  1px solid #898989;
+}
+#setDataform #setData_block .sim_activate .packages_options table{
+    width: 1000px;
+    display: none;
+    margin-left: 48px;
+    margin-top: 24px;
+    border-collapse: collapse;
+}
+
+#setDataform #setData_block .sim_activate .packages_options table tr td{
+    border-color: inherit;
+    margin: 0px;
+    padding: 7px 0px;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td span.viewdetalis{
+    color: #0084ff;
+    font-size: 15px;
+    margin-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-family: "segoe ui";
+    font-weight: bold;
+    border-bottom: 1px solid #0084ff;
+    text-transform: capitalize;
+    background: url('../images/view_detalis.png') no-repeat right 5px;
+
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td span.viewdetalis:hover{
+    border-bottom: none;
+    background: none;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td.select_block{
+    width: 200px;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown{
+    width: 176px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown .old{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown .old select{
+    margin: 0px;
+    padding: 0px;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown .selected {
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    color: #555555;
+    font-family: "segoe ui";
+    padding: 8px 12px 5px 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    border:1px solid #6DE0F1;
+    background: url('../images/selectbox_incall.jpg') no-repeat left top;
+}
+
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown .carat {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 52px;
+    height: 31px;
+    display: block;
+    background: url('../images/selectdata.png') no-repeat center 13px;
+}
+
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown > div {
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+    position: absolute;
+    margin-top: -3px;
+    width: 174px;
+    overflow: hidden;
+    border-left:1px solid #6DE0F1;
+    border-right: 1px solid #6DE0F1;
+    background: #ffffff url('../images/selectbox_incall_left.jpg') repeat-y left top;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown > div ul {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    background: url('../images/selectbox_incall_bottom.jpg') repeat-x left bottom;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td.Blackberry{
+    width: 300px;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: "segoe_uii";
+}
+
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown > div ul li{
+    padding: 2px 12px;
+    font-size: 15px;
+    color: #555555;
+    font-family: "segoe ui";
+
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td .dropdown > div ul li:hover{
+    color: #ffffff;
+    background: #00A2FF;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td.inter_call{
+
+    color:#00a2ff;
+    font-size: 19px;
+    font-family: "segoe_uii";
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td.Keep_number{
+
+    color:#555555;
+    font-size: 19px;
+    font-family: "segoe_uii";
+}
+
+#setDataform #setData_block .sim_activate .packages_options table tr td:first-child{
+    width: 72px;
+    padding-left: 14px;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td div.B_berry{
+    float: left;
+    width: 30px;
+    height: 27px;
+    background: url('../images/option_icons.png') no-repeat left top;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td div.I_calling{
+    width: 29px;
+    height: 28px;
+    float: left;
+    background: url('../images/option_icons.png') no-repeat left -55px;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td div.K_m_number{
+    width: 29px;
+    height: 25px;
+    float: left;
+    background: url('../images/option_icons.png') no-repeat left -110px;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr td input{
+    margin: 0px;
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 5px;
+    left: 14px;
+}
+#setDataform #setData_block .sim_activate .packages_options table tr.odd{
+
+    background: #ebf8ff;
+}
+
+#setDataform #setData_block .sim_activate .packages_options table tr.odd td:last-child{
+    background: #ebf8ff url('../images/option_odd_rows_1.jpg') repeat-y right top;
+}
+
+#setDataform #save_continue_block{
+
+    float: right;
+    width: 434px;
+    overflow: hidden;
+    margin: 41px 0px;
+}
+
+#setDataform #save_continue_block a{
+    width: 134px;
+    height: 48px;
+    outline: none;
+    border: none;
+    display: block;
+    float: left;
+    background:  url('../images/save_continue.png') no-repeat left top;
+}
+
+#setDataform #save_continue_block button{
+
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 285px;
+    float: right;
+    cursor: pointer;
+    background:  url('../images/save_continue.png') no-repeat -149px top;
+
+}
+
+#faqs{
+    margin: 38px auto;
+    padding: 0px;
+    width: 950px;
+    list-style: none;
+}
+#faqs  >li{
+    padding-left: 30px;
+    margin: 10px 0px;
+    width: 620px;
+    background: url('../images/ullist.png') no-repeat left 3px;
+}
+#faqs li span{
+    font-size: 17px;
+    cursor: pointer;
+    font-family: "Segoe UI";
+    color:#0072bc;
+    border-bottom: 1px solid #0072bc;
+}
+#faqs li:hover span,
+#faqs li.active span,
+#faqs li.active:hover span{
+    color: #00aeef;
+    border-bottom: none;
+}
+#faqs li div{
+    display: none;
+    text-align: justify;
+    font-size: 16px;
+    color: #555555;
+    font-family: "Segoe UI";
+    margin: 15px 25px 15px 15px;
+}
+#faqs li div p{
+    line-height: 2;
+    margin: 0px;    
+}
+#faqs li div p.note{
+    margin: 15px 0px 0px 0px;    
+}
+#faqs li div ul{    
+    margin: 0px 0px 0px 35px;
+    padding: 0px;
+    list-style: decimal;
+}
+#faqs li div ul li{
+    margin: 10px 0px;
+    line-height: 2;
+}
+
+#about_block{
+    width: 958px;
+    margin: 0px auto 40px auto;
+    padding-top: 30px;
+}
+#about_block > span{
+    font-family: "segoe_condensedbold";
+    font-size: 36.58px;
+    margin-left: 52px;
+}
+#ui-about-dialog span.important,
+#about_block span.important{
+    font-size: 19px;
+    color: #000000;
+    font-family: "Segoe UIB";
+
+}
+#persons{
+    width: 851px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+#persons >div{
+    width: 400px;
+    float: left;
+    overflow: hidden;
+}
+#persons >div:first-child{
+    margin-right: 50px;
+}
+#persons >div img{
+    width: 120px;
+    height: 160px;
+    float: left;
+    margin-right: 23px;
+    margin-top: 3px;
+    border: none;
+    vertical-align: top;
+
+}
+#persons >div >div{
+    width: 255px;
+    float: left;
+    padding: 0px;
+    color: #555555;
+    vertical-align: top;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    font-family: 'segoe_condensedregular';
+}
+#about_us{
+    width: 865px;
+    height: 170px;
+    margin-left: 54px;
+    margin-bottom: 18px;
+    padding-right: 30px;
+    color: #555555;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    position: relative;
+    font-family: 'segoe_condensedregular';
+}
+#about_block a#about_redme{
+    color:#0072bc;
+    margin-left: 54px;
+    padding-right: 12px;     
+    text-transform: capitalize; 
+    background: url('../images/redme.gif') no-repeat right 70%;
+}
+
+#about_block a#about_redme:hover{
+    background:none !important;
+}
+
+#contact{
+
+    overflow: hidden;
+    margin: 42px 0px 42px 101px;
+}
+#contact #mz_info{
+    width: 495px;
+    float: left;
+    margin-right: 47px;
+    overflow: hidden;
+
+}
+#contact #mz_info div:first-child{
+    overflow: hidden;
+    margin-top: 11px;
+    height: 156px;
+}
+#contact #mz_info div >ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    list-style: none;
+}
+#contact #mz_info div >ul li{
+    overflow: hidden;
+    color: #464646;
+    font-size: 22px;
+    margin:14px 0px;    
+    font-family: 'segoe_condensedregular';
+}
+#contact #mz_info div >ul:first-child{
+    width: 279px;
+    float: left;
+    margin-right: 39px;
+    background: url('../images/r_border.gif') no-repeat right top;
+}
+
+
+#contact #mz_info div >ul:first-child li p{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+#contact #mz_info div >ul:first-child li p a{
+    color:#00a2ff;
+    text-decoration: none;
+}
+
+#contact #mz_info div >ul:first-child li p:first-child{
+    width: 57px;
+    text-transform: capitalize;
+}
+
+#contact #mz_info #map_block{
+    width: 488px;
+    height: 207px; 
+    margin-top: 7px;
+    border: 1px solid #B1B0B0;
+    box-shadow: inset 0px 0px 20px #E6E6E6;
+}
+#contact >form{
+    width: 375px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+#order form > div.userinfo div.count,
+#order form > div.userinfo div.addr,
+#contact >form textarea,
+#contact >form input[type="text"]{
+    outline: none;
+    color:#464646;
+    font-size: 19px;
+    border: 1px solid #B1B0B0;
+    font-family: 'segoe_condensedregular';
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+}
+#order form > div.userinfo div.count{
+    background: url('../images/selectdata.png') no-repeat 330px 16px;  
+}
+#contact >form textarea:focus,
+#contact >form input[type="text"]:focus{
+    outline: none;
+    border: 1px solid #B1B0B0;
+    box-shadow: 5px 5px 5px #E6E6E6 inset;
+}
+
+#contact >form input[type="text"]{
+
+    width: 343px;
+    margin:0px 0px  17px 0px;
+    padding: 8px 15px 8px 14px;
+
+}
+#contact >form button
+{
+    width: 134px;
+    height: 48px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 21px;
+    float: right;
+    background: url('../images/submit.gif') no-repeat left top;
+}
+#contact >form textarea{
+    width: 343px;
+    height: 191px;
+    resize: vertical;
+    overflow:auto;
+    margin-top: 2px;
+    padding: 8px 15px 8px 14px;
+}
+#cart{
+    margin-left: 100px;  
+}
+
+#cart form{
+    width: 480px;
+}
+
+#cart form div.totol,
+#cart form div.product{
+    width: 480px; 
+    overflow: hidden;
+    position: relative;
+
+}
+#order form  #products .sims,
+#cart form div.product{
+    padding-top: 20px;
+    margin-top: 20px;
+    background: #EFEFEF url('../images/cart.png') no-repeat right top;
+}
+#order form  #products .sims:first-child{
+    margin-top: 0px;
+}
+#cart form div.product:first-child{
+    margin-top: 40px;
+}
+#cart form div.totol > div,
+#cart form div.product > div{
+    overflow: hidden;
+    width: 395px;
+    margin: 0px auto;
+}
+#order form  #products div.sims > div div,
+#order form  #products div.total > div div,
+#cart form div.totol > div div,
+#cart form div.product >div div{
+    float: left;
+    color:#464646;
+    margin: 10px 0px;
+    font-size: 18pt;
+    text-transform: capitalize;
+    font-family: 'segoe_condensedregular';
+}
+
+#cart form div.totol > div div img,
+#cart form div.product >div div img{
+    margin: 0px 22px;
+    padding: 0px;
+    width: 150px;
+    position:relative;
+    top:-4px;
+
+}
+#order form  #products .sims > div div:first-child,
+#order form  #products .total > div div:first-child,
+#cart form div.totol > div div:first-child,
+#cart form div.product > div div:first-child{
+    width: 131px;    
+}
+
+#cart form div.product span.removed{
+
+    top:20px;
+    right: 20px;
+    width: 14px;
+    height: 12px;
+    cursor: pointer;    
+    position: absolute; 
+    background:  url('../images/removeproduct.gif') no-repeat right top;
+}
+#order form  #products div.total,
+#cart form div.totol{
+    margin-top:10px;
+    background: #C7FFFF;
+}
+#order form  #products div.total > div div,
+#cart form div.totol > div div{
+    color:#0896d6;
+    font-weight: bold;
+    margin: 15px 0px;
+    font-family: "segoe_ui";
+}
+#cart form  #c_shopping_block{
+    height: 48px;
+    margin: 20px 0px;
+    padding: 0px;
+}
+#cart form  #c_shopping_block a{
+    width: 280px;
+    height: 48px;
+    outline: none;
+    border: none;
+    display: block;
+    float: left;
+    background:  url('../images/cartcharg.png') no-repeat left top;
+}
+#cart form  #c_shopping_block button {
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 169px;
+    float: right;
+    cursor: pointer;
+    background:  url('../images/cartcharg.png') no-repeat right top;
+}
+#order{
+    width: 840px;
+    margin: 40px 0px 0px 100px;
+    overflow: hidden;
+}
+#order form{
+    overflow: hidden;
+}
+#order form  > div.userinfo {
+    width: 369px;
+    float: left;
+}
+#order form  #products{
+    float: right;
+    width: 430px; 
+}
+#order form  #products div.sims,
+#order form  #products div.total{
+    width: 430px; 
+    overflow: hidden;
+    position: relative;
+
+}
+#order form  #products div.sims > div,
+#order form  #products div.total > div{
+    overflow: hidden;
+    width: 380px;
+    margin: 0px auto;
+}
+
+#order form  #products div.sims > div div img,
+#order form  #products div.total > div div img{
+    margin: 0px 14px;
+    padding: 0px;
+    width: 135px;
+    position:relative;
+    top:-4px;
+
+}
+#order form > div.userinfo  div.count,
+#order form > div.userinfo  div.addr{
+
+    width: 337px;
+    margin:0px 0px  17px 0px;
+    padding: 8px 15px 8px 14px;
+
+}
+#order form #order_shopping_block{
+    height: 48px;
+    width: 480px;
+    margin: 20px 0px 40px 0px;
+    padding: 0px;
+    clear: both;
+    float: right;
+    position: relative;
+}
+#order form #order_shopping_block a {
+    width: 280px;
+    height: 48px;
+    outline: none;
+    border: none;
+    display: block;
+    float: left;
+    background: url('../images/cartcharg.png') no-repeat left top;
+}
+#order form #order_shopping_block button {
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 169px;
+    float: right;
+    cursor: pointer;
+    background: url('../images/cartcharg.png') no-repeat right top;
+}
+#send_method .selectblock{
+    position: relative;
+    margin: 5px 0px;
+}
+#send_method .selectblock span.state-default,
+#send_method .selectblock span.state-selected{
+    width: 29px;
+    height: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#send_method .selectblock input{
+    width: 29px;
+    height: 28px;
+    margin: 0px;
+    padding: 0px;
+}
+#send_method .selectblock span.state-default{
+    background:  url('../images/sendtype.png') no-repeat left top; 
+}
+#send_method .selectblock span.state-selected{
+    background:  url('../images/sendtype.png') no-repeat left bottom; 
+}
+#send_method .selectblock label{
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+    color:#464646;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'segoe_condensedregular';
+    position: relative;
+    top: -7px;
+}
+#registration_block{
+    margin-top:35px;
+}
+#registration_block  form{
+    width: 800px;
+    margin: 0px 0px 0px 100px;
+    padding: 0px;
+
+}
+#registration_block  form .register_block{
+    display: table;
+}
+#registration_block  form .register_block .row{
+
+    display: table-row;
+}
+
+#registration_block  form .register_block .row .column{
+    width: 395px;
+    padding-bottom:  15px;
+    display: table-cell;
+}
+#registration_block  form .register_block .row .error input{
+    background: #ffffd8;
+    border:1px  solid #f26522 !important;
+}
+#registration_block  form .register_block .row .error .errorMessage{
+    color:#f26522;
+    font-size:18px;
+    font-family: 'segoe_ui';
+    margin: 10px 0px 0px 14px;
+   
+}
+#registration_block  form .register_block .row .column:first-child{
+    margin-right: 20px;
+}
+#registration_block  form .captcha_block .captcha  input,
+#registration_block  form .register_block  > .row .column input{
+    width: 343px;
+    margin: 0px;
+    padding: 8px 15px 8px 14px;
+    outline: none;
+    color: #464646;
+    font-size: 19px;
+    border: 1px solid #B1B0B0;
+    font-family: 'segoe_condensedregular';
+    box-shadow: 5px 5px 5px #E6E6E6 inset;    
+}
+#registration_block  form .register_block .row .column .dropdown{
+    width:375px;
+    position: relative;
+}
+#registration_block  form .register_block .row .column .dropdown .old {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+#registration_block  form .register_block .row .column .dropdown .selected {
+    display: block;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 15px 9px 14px;
+    outline: none;
+    color: #464646;
+    font-size: 19px;
+    border: 1px solid #B1B0B0;
+    font-family: 'segoe_condensedregular';
+    box-shadow: 5px 5px 5px #E6E6E6 inset; 
+}
+#registration_block  form .register_block .row .column .dropdown .carat {
+    position: absolute;
+    right: 9px;
+    top: 16px;
+    z-index: 10;
+    width: 23px;
+    height: 9px;
+    display: block;
+    background: url('../images/selectdata.png') no-repeat left top;
+}
+#registration_block  form .register_block .row .column .dropdown > div {
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+    position: absolute;
+    margin-top: -3px;
+    width: 373px;
+    overflow: auto;
+    border-right: 1px solid #B0B0B0;
+    border-left: 1px solid #B0B0B0;
+    background: #ffffff;
+}
+#registration_block  form .register_block .row .column .open  > div ul{
+    height: 30px;
+    overflow-y: auto !important;
+}
+.dropdown.scrollable.open ul {
+    overflow-y: auto;
+}
+#registration_block  form .register_block .row .column .dropdown > div ul {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    background: url('../images/selectbox_bottom.jpg') repeat-x left bottom;
+}
+
+#registration_block  form .register_block .row .column .dropdown > div ul li {
+    padding: 2px 12px;
+    font-size: 19px;
+    color: #464646;
+    font-family: 'segoe_condensedregular';
+}
+#registration_block  form .register_block .row .column .dropdown > div ul li:hover{
+    color: #ffffff;
+    background: #00A2FF;
+}
+#registration_block  form .captcha_block{
+    overflow: hidden;
+    display: none;
+}
+#registration_block  form .captcha_block .captcha{
+    width: 373px;
+    float: right;
+    margin-right: 32px;
+
+
+}
+#registration_block  form .captcha_block .captcha img{
+    width: 270px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+}
+#registration_block  form .captcha_block .captcha a{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 5px;
+    background:  url('../images/captcha_refresh.png') no-repeat 0px 0px; 
+}
+#registration_block  form .captcha_block .captcha a span{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    display: none;
+}
+#registration_block  form .captcha_block .captcha  input{
+    width: 343px;
+    margin: 0px;
+    padding: 8px 15px 8px 14px;
+    outline: none;
+    color: #464646;
+    font-size: 19px;
+    border: 1px solid #B1B0B0;
+    font-family: 'segoe_condensedregular';
+}
+#registration_block  form button{
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 168px;
+    position: relative;
+    left: 601px;
+    margin:10px 0px 25px 0px;
+    cursor: pointer;
+    background: url('../images/register.png') no-repeat right top;
+
+}
